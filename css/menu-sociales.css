@@ -1,0 +1,59 @@
+
+body{
+    background: white;
+}
+.social-container{
+    width: 5%;
+    min-width: 30px;
+    max-width: 40px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 20;
+}
+.menu-social{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.menu-social li{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    line-height: 2em;
+    transition: 0.1s;
+    transform-origin: right;
+}
+.menu-fb {
+    background: blue;
+    border-radius: 10px 0 0 0;
+}
+.menu-fb i{
+    color: white;
+}
+.menu-tw{
+    background:rgb(147, 211, 233);
+}
+.menu-tw i{
+    color: white;
+}
+.menu-yt{
+    background: red;
+    border-radius: 0 0 0 10px;
+}
+.menu-yt i{
+    color: white;
+}
+.social-container li:hover{
+    transform: scale(1.2, 1);
+    transition: 0.1s;
+}
+
+@media (max-width: 800px) {
+    .menu-social li{
+        font-size: 1em;
+        line-height: 2em;
+    }
+}
